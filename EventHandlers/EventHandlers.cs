@@ -6,6 +6,7 @@ using Exiled.API.Features;
 using System.IO;
 using Exiled.Events.EventArgs.Player;
 using Exiled.Events.EventArgs.Server;
+using PlayerRoles;
 
 namespace BetterMute.EventHandlers
 {
