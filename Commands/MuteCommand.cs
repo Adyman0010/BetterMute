@@ -14,12 +14,6 @@ namespace BetterMute
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
-            if (arguments.Count != 1)
-            {
-                response = "Usage: bmute (player id) (duration (in rounds))";
-                return false;
-            }
-            
             if (int.TryParse(arguments.At(0), out int result))
             {
                 Player player = Player.Get(result);
